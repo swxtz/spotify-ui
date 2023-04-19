@@ -48,6 +48,11 @@ export default function Home() {
           <h1 className="font-semibold text-4xl mt-8">Good Afternoon</h1>
 
           <RecentPlaylists />
+
+          <h2 className="font-semibold text-2xl mt-8">Made for Gustavo Mendonça</h2>
+
+          <div className="grid grid-cols-5 gap-4 mt-4"></div>
+
         </main>
       </div>
       <footer className="bg-zinc-800 border-1 border-zinc-700 p-6">footer</footer>
