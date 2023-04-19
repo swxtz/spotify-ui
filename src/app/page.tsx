@@ -16,13 +16,13 @@ export default function Home() {
           </div>
 
           <nav className="space-y-5 mt-10">
-            <a href="#" className="flex items-center gap-3 text-sm font-semibold text-zinc-200 hover:brightness-50 duration-200">
+            <a href="#" className="flex items-center gap-3 text-sm font-semibold text-zinc-200 hover:brightness-50 transition-colors">
               <HomeIcon />
               Home</a>
-            <a href="#" className="flex items-center gap-3 text-sm font-semibold text-zinc-200 hover:brightness-50 duration-200">
+            <a href="#" className="flex items-center gap-3 text-sm font-semibold text-zinc-200 hover:brightness-50 transition-colors">
               <Search />  
               Search</a>
-            <a href="#" className="flex items-center gap-3 text-sm font-semibold text-zinc-200 hover:brightness-50 duration-200">
+            <a href="#" className="flex items-center gap-3 text-sm font-semibold text-zinc-200 hover:brightness-50 transition-colors">
               <Library />
               Your Library</a>
           </nav>
