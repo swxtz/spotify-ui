@@ -3,8 +3,19 @@ import { Home as HomeIcon, Search, Library} from 'lucide-react'
 import { Playlist } from "./components/Playlist";
 import { PagesButtons } from "./components/PagesButtons";
 import { RecentPlaylists } from "./components/RecentPlaylists";
-
+import { useId } from 'react'
+ 
 export default function Home() {
+
+  const playlists = [
+    'Hot Hits Brasil',
+    'Dope',
+    'Daily Mix 1',
+    'Daily Mix 2',
+    'Daily Mix 3',
+    'Daily Mix 4',
+  ];
+
   return (
     <div className="h-screen flex flex-col">
       <div className="flex flex-1">
@@ -28,13 +39,7 @@ export default function Home() {
           </nav>
 
           <nav className="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-3">
-            <Playlist href="#" title="Hot Hits Brasil" />
-            <Playlist href="#" title="Dope" />
-            <Playlist href="#" title="Daily Mix 1" />
-            <Playlist href="#" title="Daily Mix 2" />
-            <Playlist href="#" title="Daily Mix 3" />
-            <Playlist href="#" title="Daily Mix 4" />
-            <Playlist href="#" title="Daily Mix 5" />
+            {playlists.map((playlist) => <Playlist href="#" title={playlist} key={useId()} />)}
           </nav>
         </aside>
         <main className="flex-1 p-6">
