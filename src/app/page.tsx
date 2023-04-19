@@ -1,5 +1,8 @@
+
 import { Home as HomeIcon, Search, Library} from 'lucide-react'
 import { Playlist } from "./components/Playlist";
+import { PagesButtons } from "./components/PagesButtons";
+import { RecentPlaylists } from "./components/RecentPlaylists";
 
 export default function Home() {
   return (
@@ -34,7 +37,13 @@ export default function Home() {
             <Playlist href="#" title="Daily Mix 5" />
           </nav>
         </aside>
-        <main className="flex-1 p-6">main</main>
+        <main className="flex-1 p-6">
+          <PagesButtons />
+
+          <h1 className="font-semibold text-4xl mt-8">Good Afternoon</h1>
+
+          <RecentPlaylists />
+        </main>
       </div>
       <footer className="bg-zinc-800 border-1 border-zinc-700 p-6">footer</footer>
     </div>
