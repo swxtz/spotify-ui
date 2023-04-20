@@ -1,9 +1,12 @@
 
+
 import Image from 'next/image';
 import { useId } from 'react';
 import play from '../../../public/play.svg';
 
 export function RecentPlaylists() {
+
+
   const playlists = [
     'Hot Hits Brasil',
     'Dope',

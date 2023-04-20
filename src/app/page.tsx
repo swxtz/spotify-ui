@@ -1,9 +1,9 @@
-
 import { Home as HomeIcon, Search, Library} from 'lucide-react'
 import { Playlist } from "./components/Playlist";
 import { PagesButtons } from "./components/PagesButtons";
 import { RecentPlaylists } from "./components/RecentPlaylists";
 import { useId } from 'react'
+import { MadeForYou } from "./components/MadeForYou";
  
 export default function Home() {
 
@@ -51,11 +51,13 @@ export default function Home() {
 
           <h2 className="font-semibold text-2xl mt-8">Made for Gustavo Mendonça</h2>
 
-          <div className="grid grid-cols-5 gap-4 mt-4"></div>
+          <div className="grid grid-cols-5 gap-4 mt-4">
+            <MadeForYou />
+          </div>
 
         </main>
       </div>
-      <footer className="bg-zinc-800 border-1 border-zinc-700 p-6">footer</footer>
+      <footer className="bg-zinc-800 border-1 border-zinc-700 p-6 fixed bottom-0 w-full">footer</footer>
     </div>
   );
 }
