@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Spotify UI 🎶</h1>
 
-## Getting Started
+Um clone da interface do spotify web, feito 100% em Typescriptt, TailwindCSS e NextJS 13
 
-First, run the development server:
+<img src="https://media.discordapp.net/attachments/1095183064604364942/1098672388876542042/image.png?width=853&height=480">
+
+## Como Rodar o projeto
+
+Esse projeto foi feito em NextJS 13 então é necessario NodeJS na versão 18.0.0 ou superior.
+
+Apos isso basta clonar o projeto com 
+````bash
+# Via Git CLI com HTTPS
+
+git clone https://github.com/swxtz/spotify-ui.git
+
+# ou via Git CLI com SSH 
+
+git clone git@github.com:swxtz/spotify-ui.git
+
+# Via Github CLI
+
+gh repo clone swxtz/spotify-ui
+
+````
+Para instalar todas as dependencias do projeto basta rodar `npm i` ou `yarn`
+
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm i
+
+# ou
+
+yarn
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Depois de instalar as dependencias basta rodar o `npm run dev` ou `yarn dev`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Para desenvolvimento 
+npm run dev
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+# ou
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+yarn dev 
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+# Para distribuição 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run build && npm run start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# ou 
 
-## Deploy on Vercel
+yarn dev && yarn start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Tech Stack 🚀
+- [Typescript](https://github.com/microsoft/TypeScript)
+
+- [NextJS](https://github.com/vercel/next.js)
+
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
+- [Lucide-Icons](https://github.com/lucide-icons/lucide)
