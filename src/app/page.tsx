@@ -4,6 +4,7 @@ import { PagesButtons } from "./components/PagesButtons";
 import { RecentPlaylists } from "./components/RecentPlaylists";
 import { useId } from 'react'
 import { MadeForYou } from "./components/MadeForYou";
+import { Player } from "./components/Player";
  
 export default function Home() {
 
@@ -57,7 +58,9 @@ export default function Home() {
 
         </main>
       </div>
-      <footer className="bg-zinc-800 border-1 border-zinc-700 p-6 fixed bottom-0 w-full">footer</footer>
+      
+        <Player />
+      
     </div>
   );
 }
